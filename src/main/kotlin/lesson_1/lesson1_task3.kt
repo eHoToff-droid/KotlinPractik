@@ -7,7 +7,7 @@ fun main() {
     var minute: String ="07"
 
 
-    println("Год полета Юрия Гагарина:")
+    println("Год  полета Юрия Гагарина:")
     println(yearGagarinFlight)
 //    println(hour)
 //    println(minute)
