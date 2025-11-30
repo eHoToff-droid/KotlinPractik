@@ -2,7 +2,7 @@ package lesson_1
 
 fun main() {
 
-    var  numberOfOrders: Int =42  //количество заказов
+    var  numberOfOrders: Int =41  //количество заказов
     val welcomeMessage: String = "Благодарим за покупку, тварь! "
 
     println("количество заказов:")
