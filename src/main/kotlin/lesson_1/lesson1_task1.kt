@@ -7,8 +7,8 @@ fun main() {
     println(numberOfOrders)
     println(welcomeMessage)
 
-    val heightOfRectangle: Int = 5
-    val widthOfRectangle = 10
+    val heightOfRectangle: Int = 6
+    val widthOfRectangle = 12
 
     println(heightOfRectangle)
     println(widthOfRectangle)
