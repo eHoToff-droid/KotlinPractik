@@ -1,7 +1,15 @@
 package lesson_1
 
 fun main() {
-    println("Тестовое решение к уроку №1")
-    println("Какие-то доработки")
+    var  numberOfOrders: Int =42
+    val welcomeMessage: String = " Благодарим за покупку, тварь! "
 
+    println(numberOfOrders)
+    println(welcomeMessage)
+
+    val heightOfRectangle: Int = 6
+    val widthOfRectangle = 12
+
+    println(heightOfRectangle)
+    println(widthOfRectangle)
 }
