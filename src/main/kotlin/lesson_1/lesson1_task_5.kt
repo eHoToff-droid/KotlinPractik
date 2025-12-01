@@ -1,28 +1,29 @@
 package lesson_1
 
+
+
+//время в космосе в секундах
+const val TIMEINSEC: Int = 6480
+
+
 fun main() {
 
+    // перевод секунд в  минуты
+    val minute: Int = TIMEINSEC / 60
 
-    val seconds: Short = 6480
+    //перевод секунд в часы
+    val hour: Int = TIMEINSEC / 3600
 
-    //остаток от минут
-    val remaindMinut = seconds%60
-    // println(remaindMinut)
+    //остаток секунд
+    val remainedSecund = TIMEINSEC % 60
 
-    //остаток от часа
-    val remaindHour = seconds%3600
-    // println(remaindHour)
+    //остаток минут
+    val remainedMinute = minute % 60
 
-    val  minute: Int = remaindHour/60
-    val hour: Int= seconds/3600
+    //форматируем время
+    val formattedTime = String.format("%02d:%02d:%02d", hour, remainedMinute, remainedSecund)
 
-    println("$hour : $minute : 0$remaindMinut  ")
-
-
-
-
-
-
-
+    //вывод времени проведенное в космосе
+    println(formattedTime)
 
 }
