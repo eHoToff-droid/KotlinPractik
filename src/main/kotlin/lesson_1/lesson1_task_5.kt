@@ -25,5 +25,4 @@ fun main() {
 
     //вывод времени проведенное в космосе
     println(formattedTime)
-
 }
