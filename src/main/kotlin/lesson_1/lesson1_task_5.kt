@@ -1,10 +1,7 @@
 package lesson_1
 
-
-
 //время в космосе в секундах
 const val TIMEINSEC: Int = 6480
-
 
 fun main() {
 
