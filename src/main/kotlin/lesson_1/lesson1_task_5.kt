@@ -1,6 +1,5 @@
 package lesson_1
 
-
 const val CONVERT_MIN = 60
 const val CONVERT_HOUR = 3600
 
