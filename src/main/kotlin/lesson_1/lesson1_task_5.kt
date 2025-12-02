@@ -1,15 +1,18 @@
 package lesson_1
 
-//время в космосе в секундах
-const val TIMEINSEC: Int = 6480
+
+const val CONVERT_MIN = 60
+const val CONVERT_HOUR = 3600
 
 fun main() {
+    //время в космосе в секундах
+    val TIMEINSEC: Int = 6480
 
     // перевод секунд в  минуты
-    val minute: Int = TIMEINSEC / 60
+    val minute: Int = TIMEINSEC / CONVERT_MIN
 
     //перевод секунд в часы
-    val hour: Int = TIMEINSEC / 3600
+    val hour: Int = TIMEINSEC / CONVERT_HOUR
 
     //остаток секунд
     val remainedSecund = TIMEINSEC % 60
