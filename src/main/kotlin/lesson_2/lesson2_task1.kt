@@ -7,7 +7,7 @@ fun main() {
     val studentBall3=3
     val studentBall4=5
 
-    val avergeBall: Float = (studentBall1+studentBall2+studentBall3+studentBall4)/4f
-    println(avergeBall)
+    val averageBall: Float = (studentBall1+studentBall2+studentBall3+studentBall4)/4f
+    println(averageBall)
 
 }
