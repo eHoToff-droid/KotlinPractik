@@ -14,10 +14,10 @@ fun main() {
     val hour: Int = TIMEINSEC / CONVERT_HOUR
 
     //остаток секунд
-    val remainedSecund = TIMEINSEC % 60
+    val remainedSecund = TIMEINSEC % CONVERT_MIN
 
     //остаток минут
-    val remainedMinute = minute % 60
+    val remainedMinute = minute % CONVERT_MIN
 
     //форматируем время
     val formattedTime = String.format("%02d:%02d:%02d", hour, remainedMinute, remainedSecund)
