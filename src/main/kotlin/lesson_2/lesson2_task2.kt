@@ -1,26 +1,28 @@
 package lesson_2
 
-//основной персонал
-const val   MAINS_STAFF =50
-//зп основного работника
-const val  SALARY_MAIN =30000
-//стажеры
-const val  NEW_STAFF=30
-//зп стажера
-const val  SALARY_NEW =20000
-
-
 fun main() {
+    //основной персонал
+    val mainStaff = 50
+
+    //зп основного работника
+    val salaryMain = 30000
+
+    //стажеры
+    val newStaff = 30
+
+    //зп стажера
+    val salaryNew = 20000
+
     //  расходы на основных работников
-    val  costMain: Int = MAINS_STAFF*SALARY_MAIN
+    val costMain: Int = mainStaff * salaryMain
     println(costMain)
 
     //  расходы на всех работников
-    val costTotal: Int = costMain+NEW_STAFF*SALARY_NEW
+    val costTotal: Int = costMain + newStaff * salaryNew
     println(costTotal)
 
     //средняя зп в фирме
-    val  salaryAverage: Int = costTotal/(MAINS_STAFF+NEW_STAFF)
+    val salaryAverage: Int = costTotal / (mainStaff + newStaff)
     println(salaryAverage)
 
 }
