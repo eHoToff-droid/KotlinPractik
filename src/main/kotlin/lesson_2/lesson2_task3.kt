@@ -1,26 +1,19 @@
 package lesson_2
 
+const val TO_MIN = 60
+
 fun main() {
 
-    //время отправления в минутах
-    val departureTime: Int = 9 * 60 + 39
-//    println(departureTime)
-
-    //время в пути
+    val departTimeHour: Int = 9
+    val departTimeMin: Int = 37
     val timeInWay = 457
 
-    //час прибытия
-    val arrivalHour: Int = (departureTime + timeInWay) / 60
-//    println(arrivalHour)
+    val arrivalHour: Int = (departTimeHour*TO_MIN+departTimeMin + timeInWay) / TO_MIN
 
-    //минуты прибытия
-    val arrivalMinute: Int = arrivalHour % 60
-//    println(arrivalMinute)
+    val arrivalMinute: Int = arrivalHour % TO_MIN
 
-    //время прибытия первый вариант
     println("$arrivalHour:$arrivalMinute")
 
-    //время прибытия второй вариант
     val formattedTime = String.format("%02d:%02d", arrivalHour, arrivalMinute)
     println(formattedTime)
 
