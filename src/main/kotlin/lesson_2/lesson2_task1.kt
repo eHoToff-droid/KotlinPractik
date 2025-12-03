@@ -8,6 +8,7 @@ fun main() {
     val studentBall4 = 5
     val numberOfStudent: Float = 4f
 
+    //Средний бал
     val averageBall: Float = (studentBall1 + studentBall2 + studentBall3 + studentBall4) / numberOfStudent
     println(averageBall)
 
