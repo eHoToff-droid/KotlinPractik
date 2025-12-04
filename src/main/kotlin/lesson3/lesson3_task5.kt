@@ -2,7 +2,6 @@ package lesson3
 
 fun main() {
 
-
     val turnChes: String = "D2-D4;0"
 
     val fromWhere: String = turnChes.take(2)
