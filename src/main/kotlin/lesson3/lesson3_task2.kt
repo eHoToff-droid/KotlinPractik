@@ -2,6 +2,7 @@ package lesson3
 
 fun main() {
 
+
     val firstName = "Татьяна"
     var secondName = "Андрееева"
     val thirdName = "Сергеевна"
