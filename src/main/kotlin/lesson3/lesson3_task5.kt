@@ -4,13 +4,15 @@ fun main() {
 
     val turnChes: String = "D2-D4;0"
 
-    val fromWhere: String = turnChes.take(2)
-    println("Откуда: $fromWhere")
+    val parsingTurn: List<String> = turnChes.split("-", ";")
 
-    val where: String = turnChes.substring(3, 5)
-    println("Куда: $where")
+    val fromWhere = parsingTurn[0]
+    println(fromWhere)
 
-    val parsingTurn: List<String> = turnChes.split(";")
-    val numberTurn = parsingTurn[1]
-    println("номер хода: $numberTurn")
+    val where = parsingTurn[1]
+    println(where)
+
+    val numberTurn = parsingTurn[2]
+    println(numberTurn)
+
 }
