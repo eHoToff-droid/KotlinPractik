@@ -2,14 +2,17 @@ package lesson_4
 
 fun main() {
 
-    val todaySunWeather: Boolean = true
-    val openTent: Boolean = true
+    val isSunny: Boolean = true
+    val isAwningOpen: Boolean = true
     val humidity: Int = 20
     val season: String = "winter"
 
     println(
         "Благоприятные ли условия сейчас для роста бобовых?: " +
-                "${(todaySunWeather == SUN_WEATHER) && (openTent == OPEN_TENT) && (humidity == AIR_HUMIDITY) && (season != SEASON)}"
+                "${
+                    (isSunny == SUN_WEATHER) && (isAwningOpen == OPEN_TENT) &&
+                            (humidity == AIR_HUMIDITY) && (season != SEASON)
+                }"
     )
 
 }
