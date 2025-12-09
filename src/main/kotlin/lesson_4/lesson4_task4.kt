@@ -3,15 +3,15 @@ package lesson_4
 fun main() {
 
     val dayOfTraining = 5
-    val isEven = 0
+    val isEven = dayOfTraining % 2
 
     println(
         """
         
-        Упражнения для рук:    ${dayOfTraining % 2 != isEven}
-        Упражнения для ног:    ${dayOfTraining % 2 == isEven} 
-        Упражнения для спины:  ${dayOfTraining % 2 == isEven} 
-        Упражнения для пресса: ${dayOfTraining % 2 != isEven}       
+        Упражнения для рук:    ${isEven == 1}
+        Упражнения для ног:    ${isEven == 0} 
+        Упражнения для спины:  ${isEven == 0} 
+        Упражнения для пресса: ${isEven == 1}       
         
         
     """.trimIndent()
