@@ -14,7 +14,6 @@ fun main() {
                             (humidity == AIR_HUMIDITY) && (season != SEASON)
                 }"
     )
-
 }
 
 const val SUN_WEATHER: Boolean = true
